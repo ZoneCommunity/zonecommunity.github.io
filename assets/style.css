@@ -129,6 +129,27 @@ body {
     color: white;
 }
 
+.hfDButton {
+    background-color: rgba(0, 0, 0, 0);
+    color: #3645ed;
+    outline: none;
+    border-style: none;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+
+.hfDButton:hover {
+    color: #5864F2;
+}
+
+
 
 
 
