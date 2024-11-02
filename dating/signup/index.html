@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>ZoneDating®</title>
+    <link rel="icon" href="../../assets/Zone.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../../assets/style.css">
+
+    <style>
+        .contentR {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            gap: 20px;
+        }
+
+        .text-containerR {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: left;
+            color: rgb(255, 212, 234);
+        }
+
+        .hfRButton {
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(255, 87, 174);
+            outline: none;
+            border-style: none;
+            height: 40px;
+            padding-left: 0px;
+            padding-right: 15px;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: color 0.1s ease;
+        }
+
+        .hfRButton:hover {
+            color: rgb(254, 32, 147);
+        }
+    </style>
+
+    <meta property="og:title" content="ZoneDating®" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.zonecommunity.net/dating" />
+    <meta property="og:image" content="https://www.zonecommunity.net/assets/ZonePink.png" />
+    <meta property="og:description"
+        content="Life is long. Have a relationship with someone who lives three time zones away. ®" />
+    <meta name="theme-color" content="#0f86e8">
+</head>
+
+<body>
+    <header id="header">
+        <button class="hButton" id="zonelogo" onclick="location.href='/';"></button>
+        <button class="hButton" onclick="location.href='/zoneos';">ZoneOS</button>
+        <button class="hButton" id="searchimg"></button>
+    </header>
+
+    <div id="main">
+        <div class="contentR" style="height: 750px;">
+            <div class="text-containerR">
+                <p class="welcomef">ZoneDating® Signup page</p> 
+                <p>The signup page is loading...</p>
+                <div style="height: 40px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p class="left">© 2024 ZoneCommunity</p>
+        <div>
+            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="fButton">Discord</button></a>
+            <span class="divider"></span>
+            <a href="https://www.youtube.com/@CreeperDaGuy"><button class="fButton">YouTube</button></a>
+        </div>
+        <p class="right"><button class="fButton" onclick="location.href='/about.html';">About</button></p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
