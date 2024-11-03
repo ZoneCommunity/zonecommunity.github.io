@@ -159,7 +159,7 @@ body {
     padding: 10px 30px;
     border-radius: 5px;
     background: linear-gradient(to bottom, #5c68ed 0%, #3645ed 100%);
-    border: 1px solid #07c;
+    border: 1px solid rgb(27, 85, 231);
     color: white;
     text-decoration: none;
     font-size: 18px;
