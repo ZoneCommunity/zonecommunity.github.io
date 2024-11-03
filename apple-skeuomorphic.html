@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: #f0f0f0;
+    }
+
+    .nav {
+      background: linear-gradient(to bottom, #707070 0%, #4a4a4a 100%);
+      height: 40px;
+      border-bottom: 1px solid #2b2b2b;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .nav ul {
+      max-width: 980px;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav li {
+      padding: 0 15px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #d1d1d1;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 200;
+      color: #333;
+      margin-bottom: 20px;
+      text-shadow: 0 1px 0 white;
+    }
+
+    .hero p {
+      font-size: 27px;
+      font-weight: 200;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 5px;
+      background: linear-gradient(to bottom, #42a1ec 0%, #0070c9 100%);
+      border: 1px solid #07c;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 400;
+      text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+      box-shadow: 
+        0 1px 0 rgba(255,255,255,0.4) inset,
+        0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .cta-button:hover {
+      background: linear-gradient(to bottom, #51a9ee 0%, #147bcd 100%);
+    }
+
+    .products {
+      max-width: 980px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #d1d1d1;
+      box-shadow: 
+        0 1px 3px rgba(0,0,0,0.1),
+        0 1px 0 rgba(255,255,255,0.7) inset;
+    }
+
+    .product-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .product-card h3 {
+      font-size: 24px;
+      font-weight: 300;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Apple</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPod</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">iPad</a></li>
+      <li><a href="#">iTunes</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>iPhone 4S</h1>
+    <p>The most amazing iPhone yet.</p>
+    <a href="#" class="cta-button">Learn more</a>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="/api/placeholder/200/200" alt="MacBook Pro">
+      <h3>MacBook Pro</h3>
+      <p>The fastest, most powerful Mac notebook ever.</p>
+    </div>
+    <div class="product-card">
+      <img src="/api/placeholder/200/200" alt="iPad">
+      <h3>iPad</h3>
+      <p>Thin. Light. Epic.</p>
+    </div>
+    <div class="product-card">
+      <img src="/api/placeholder/200/200" alt="iPod">
+      <h3>iPod</h3>
+      <p>1000 songs in your pocket.</p>
+    </div>
+  </section>
+</body>
+</html>
