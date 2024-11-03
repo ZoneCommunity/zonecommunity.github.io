@@ -151,6 +151,45 @@ body {
     padding: 40px 20px;
 }
 
+.hfNButton {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #e0e0e0 0%, #cfcfcf 100%);
+    border: 1px solid #b0b0b0;
+    color: #9a9a9a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: none;
+    cursor: not-allowed;
+}
+
+.hfNButton:hover {
+    background: linear-gradient(to bottom, #e0e0e0 0%, #cfcfcf 100%);
+    color: #9a9a9a;
+}
+
+.hfGButton {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #24292e 0%, #1b1f23 100%);
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset,
+                0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hfGButton:hover {
+    background: linear-gradient(to bottom, #2e3234 0%, #202225 100%);
+}
+
 .hfButton {
     display: inline-block;
     padding: 10px 30px;
