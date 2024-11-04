@@ -15,14 +15,13 @@ body {
 }
 
 .infoimg {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease;
-
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin: 35px auto 15px auto;
 }
 
 .infoimg:hover {
@@ -242,11 +241,34 @@ body {
     font-size: 13px;
     font-weight: 300;
     padding: 10px 5%;
+    gap: 10px;
 }
 
 #footer > * {
     margin: 5px 10px;
 }
+
+@media (max-width: 590px) {
+    #footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .left, .right {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right {
+        text-align: center;
+        gap: 20px;
+    }
+}
+
 
 .left, .right {
     flex: 1 0 0;
@@ -314,19 +336,4 @@ body {
 
 #zonelogo:hover {
     background-image: url('Zone.png');
-}
-
-@media (max-width: 590px) {
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .right {
-        text-align: center;
-    }
-    
-    .left, .right {
-        flex: none;
-    }
 }
