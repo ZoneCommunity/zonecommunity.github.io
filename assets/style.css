@@ -11,29 +11,21 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #707070;
-}
+    background-color: #000000;
 
-.infoimg {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
-    margin: 35px auto 15px auto;
-}
-
-.infoimg:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    background-image: url('Welcomer.png');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 45px;
-    background: linear-gradient(to bottom, #707070 0%, #4a4a4a 100%);
+    margin: 5px 10px;
+
     position: sticky;
     top: 0;
     z-index: 100;
@@ -41,7 +33,7 @@ body {
 
 .hButton {
     background-color: transparent;
-    color: rgb(204, 204, 204);
+    color: white;
     outline: none;
     border: none;
     height: 100%;
@@ -50,30 +42,46 @@ body {
     font-size: 13px;
     font-weight: 400;
     cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.hButton:hover {
-    color: white;
 }
 
 #main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.contentR {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.text-containerR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 #welcomer {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+
     padding: 60px 20px;
     text-align: center;
     border-bottom: 1px solid #d1d1d1;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 100%;
     height: 500px;
     justify-content: center;
@@ -85,175 +93,33 @@ body {
     font-size: 52px !important;
     margin: 0 !important;
 
-    color: #333 !important;
-
-    margin-bottom: 20px !important;
-    text-shadow: 0 1px 0 white !important;
-}
-#welcomer p {
-    margin-bottom: 30px;
-    color: #666;
-}
-
-.content1 {
-    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
-    padding-bottom: 20px;
-    text-align: center;
-    border-bottom: 1px solid #d1d1d1;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
-    width: calc(100% + 40px);
-}
-.content1 p {
-    margin-bottom: 20px !important;
-}
-
-.content2 {
-    padding-bottom: 20px;
-    text-align: center;
-    border-bottom: 1px solid #d1d1d1;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
-    width: calc(100% + 40px);
-}
-.content2 p {
-    margin-bottom: 20px !important;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    min-height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    padding: 40px 20px;
-
-    border-bottom: 1px solid #d1d1d1;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.content p {
-    margin-bottom: 30px;
-    color: #666;
-}
-
-.contenter {
-    display: flex;
-    flex-direction: column;
-    min-height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    padding: 40px 20px;
-
-    color: white;
-
-    background: linear-gradient(to bottom, #8dc6e8 0%, #0c5d88 100%);
-
-    border-bottom: 1px solid #d1d1d1;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-.contentef {
-    font-size: 52px !important;
-    margin: 0 !important;
-
     color: #ffffff !important;
 
     margin-bottom: 20px !important;
-    text-shadow: 0 1px 0 rgb(176, 176, 176) !important;
 }
-
-.zcontent {
-    display: flex;
-    flex-direction: column;
-    min-height: 1000px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    padding: 40px 20px;
-}
-
-.hfNButton {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #e0e0e0 0%, #cfcfcf 100%);
-    border: 1px solid #b0b0b0;
-    color: #9a9a9a;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: none;
-    cursor: not-allowed;
-}
-
-.hfNButton:hover {
-    background: linear-gradient(to bottom, #e0e0e0 0%, #cfcfcf 100%);
-    color: #9a9a9a;
-}
-
-.hfGButton {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #24292e 0%, #1b1f23 100%);
-    border: 1px solid rgba(27, 31, 35, 0.15);
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset,
-                0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.hfGButton:hover {
-    background: linear-gradient(to bottom, #393b3c 0%, #303234 100%);
+#welcomer p {
+    margin-bottom: 30px;
+    color: #ffffff;
 }
 
 .hfButton {
     display: inline-block;
     padding: 10px 30px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #42a1ec 0%, #0070c9 100%);
-    border: 1px solid #07c;
-    color: white;
-    text-decoration: none;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #ffffff00;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+
     cursor: pointer;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset,
-                0 1px 3px rgba(0, 0, 0, 0.3);
+
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .hfButton:hover {
-    background: linear-gradient(to bottom, #51a9ee 0%, #147bcd 100%);
-}
-
-.hfDButton {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #5c68ed 0%, #3645ed 100%);
-    border: 1px solid rgb(27, 85, 231);
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset,
-                0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.hfDButton:hover {
-    background: linear-gradient(to bottom, #6f79e8 0%, #4451ea 100%);
+    background-color: #ffffffa2;
+    color: #000000;
 }
 
 #footer {
@@ -263,7 +129,6 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 50px;
-    background: linear-gradient(to bottom, #707070 0%, #4a4a4a 100%);
     color: rgb(255, 255, 255);
     font-size: 13px;
     font-weight: 300;
@@ -295,7 +160,6 @@ body {
         gap: 20px;
     }
 }
-
 
 .left, .right {
     flex: 1 0 0;
@@ -347,20 +211,16 @@ body {
 }
 
 #zonelogo {
-    background-image: url('ZonePrev.png');
+    background-image: url('ZoneWhite.png');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
     z-index: 1;
     padding: 0 20px;
-    transition: background-image 0.1s ease;
 }
 
 #searchimg:hover {
     background-image: url('Search.png');
 }
 
-#zonelogo:hover {
-    background-image: url('ZoneWhite.png');
-}
