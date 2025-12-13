@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>ZoneCommunity</title>
     <link rel="icon" href="assets/Zone.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="/assets/style.css">
-    <script src="/scripts/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 
     <meta property="og:title" content="ZoneCommunity Official Website" />
     <meta property="og:type" content="website" />
@@ -19,35 +18,57 @@
     <meta name="theme-color" content="#0f86e8">
 </head>
 <body>
-    <header id="header">
-        <button class="hButton" style="margin-left: 65px;" id="zonelogo" onclick="location.href='/';"></button>
-        <p class="left" style="color: white; margin-left: 5px;">ZoneCommunity</p>
-    </header>
-
     <div id="main">
-        <div id="welcomer">
-            <div class="text-containerR">
-                <p class="welcomef">ZoneOS Mesolite</p> 
-                <p>Pushing PowerPoint even further.</p>
-                <a href="/zoneos" class="hfButton">Learn more</a>
-            </div>
-        </div>
-        <div class="content" style="height: 400px;">
-            <div class="text-containerR">
-                <p class="welcomef">ZoneOS Archive</p> 
-                <p>Every version of ZoneOS, in one place.</p>
-                <a href="/zoneos/archive" class="hfButton">View the archive</a>
-            </div>
-        </div>
-    </div>
+        <header id="header">
+            <button class="nav-button nav-button--logo" onclick="location.href='/';"></button>
+            <button class="nav-button" onclick="location.href='/zoneos';">ZoneOS</button>
+            <button class="nav-button nav-button--search"></button>
+        </header>
 
-    <footer id="footer">
-        <p class="left">© 2025 ZoneCommunity</p>
-        <div class="right">
-            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="fButton">Discord</button></a>
-            <span class="divider"></span>
-            <a href="https://www.youtube.com/@CreeperDaGuy"><button class="fButton">YouTube</button></a>
-        </div>
-    </footer>
+        <section class="section section--hero">
+            <p class="section__title">ZoneOS Mesolite</p> 
+            <p>See what's next for ZoneOS, next year.</p>
+            <a href="/zoneos"><button class="btn">Learn more</button></a>
+        </section>
+
+        <section class="section section--default">
+            <p class="section__title">ZoneOS Archive</p> 
+            <p>Every version of ZoneOS. In one place.</p>
+            <a href="/zoneos/archive"><button class="btn">View the archive</button></a>
+        </section>
+
+        <section class="section section--glossy">
+            <p class="section__title section__title--light">Web-based projects</p> 
+            <p class="section__title--light">Check out some non-PowerPoint creations!</p>
+        </section>
+
+        <section class="section section--default">
+            <p class="section__title">sierra</p> 
+            <p>A new, secure web OS core.</p>
+            <button class="btn btn--disabled">Coming soon</button>
+        </section>
+
+        <section class="section section--default">
+            <p class="section__title">parallel</p> 
+            <p>A web-based desktop environment.</p>
+            <a href="https://github.com/ZoneCommunity/parallel"><button class="btn">View on GitHub</button></a>
+        </section>
+
+        <section class="section section--default">
+            <p class="section__title">Other Projects</p> 
+            <p>Check out more projects on GitHub.</p>
+            <a href="https://github.com/ZoneCommunity"><button class="btn btn--github">Visit the GitHub</button></a>
+        </section>
+    
+        <footer id="footer">
+            <p class="footer__left">© 2025 ZoneCommunity</p>
+            <div>
+                <a href="https://discord.com/invite/WTVGAMPnzN"><button class="footer__link">Discord</button></a>
+                <span class="footer__divider"></span>
+                <a href="https://www.youtube.com/@CreeperDaGuy"><button class="footer__link">YouTube</button></a>
+            </div>
+            <p class="footer__right"><button class="footer__link" onclick="location.href='/about';">About</button></p>
+        </footer>
+    </div>
 </body>
 </html>

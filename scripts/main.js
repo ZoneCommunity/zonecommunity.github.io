@@ -1,4 +1,4 @@
-const header = document.getElementById('header');
+/* const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
@@ -6,4 +6,4 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('scrolled');
     }
-});
+}); */

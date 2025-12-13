@@ -8,33 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>ZoneOS - ZoneCommunity</title>
     <link rel="icon" href="../assets/Zone.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="/assets/style.css">
-    <script src="/scripts/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
 </head>
 <body>
-    <header id="header">
-        <button class="hButton" style="margin-left: 65px;" id="zonelogo" onclick="location.href='/';"></button>
-        <p class="left" style="color: white; margin-left: 5px;">ZoneOS - ZoneCommunity</p>
-    </header>
-
     <div id="main">
-        <div class="content" style="height: 800px; margin-top: 50px;">
-            <p class="welcomef">ZoneOS, pushing PowerPoint even further</p> 
+        <header id="header">
+            <button class="nav-button nav-button--logo" onclick="location.href='/';"></button>
+            <button class="nav-button" onclick="location.href='/zoneos';">ZoneOS</button>
+            <button class="nav-button nav-button--search"></button>
+        </header>
+
+        <section class="section section--default" style="height: 800px;">
+            <p class="section__title">ZoneOS, pushing PowerPoint even further</p> 
             <p>Soon.</p>
-            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="hfButton">Join the Discord</button></a>
+            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="btn btn--discord">Join the Discord</button></a>
             <div style="height: 40px;"></div>
-            <img src="../assets/MesolitePromo.png" class="infoimg" style="max-width: 700px; margin-bottom: 10px; margin-top: 0px;">
+            <img src="../assets/MesolitePromo.png" class="section__image" style="max-width: 700px; margin-bottom: 10px; margin-top: 0px;">
             <p style="font-size: 14px;">Mesolite is in early development, and is subject to change.</p>
-        </div>
+        </section>
     </div>
 
     <footer id="footer">
-        <p class="left">© 2025 ZoneCommunity</p>
-        <div class="right">
-            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="fButton">Discord</button></a>
-            <span class="divider"></span>
-            <a href="https://www.youtube.com/@CreeperDaGuy"><button class="fButton">YouTube</button></a>
+        <p class="footer__left">© 2025 ZoneCommunity</p>
+        <div>
+            <a href="https://discord.com/invite/WTVGAMPnzN"><button class="footer__link">Discord</button></a>
+            <span class="footer__divider"></span>
+            <a href="https://www.youtube.com/@CreeperDaGuy"><button class="footer__link">YouTube</button></a>
         </div>
+        <p class="footer__right"><button class="footer__link" onclick="location.href='/about';">About</button></p>
     </footer>
 </body>
 </html>

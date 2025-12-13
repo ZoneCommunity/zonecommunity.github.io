@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>ZoneDating®</title>
+    <link rel="icon" href="../assets/Zone.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+
+    <style>
+        .section--dating {
+            display: flex;
+            flex-direction: row;
+            height: 900px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            gap: 20px;
+        }
+
+        .dating__text {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: left;
+            color: rgb(255, 101, 181);
+        }
+
+        .btn--pink {
+            /* Hot pink colors for dating */
+            --hue: 330deg;
+            --sat: 100%;
+            --hue2: calc(var(--hue) + 8deg);
+            --sat2: 95%;
+            --clr: hsl(var(--hue) var(--sat) 50%);  
+            --clr2: hsl(var(--hue2) var(--sat2) 70%);
+            --text: white;
+            --gradoffset: 45%;
+            --gradgap: 30%;
+
+            font-size: 18px;
+            color: var(--text);
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            background-color: var(--clr);
+            background-image:   
+                linear-gradient(180deg, 
+                    var(--clr2) var(--gradgap), 
+                    transparent calc(100% - var(--gradgap))
+                );
+            background-repeat: no-repeat;
+            background-position: center var(--gradoffset);
+            background-size: 100% 200%;
+            padding: 0.7em 1.2em;
+            margin-top: 22px;
+            border-radius: 2em;
+            border: none;
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            
+            box-shadow: 
+                0 0.25em 0.3em -0.2em hsla(var(--hue), var(--sat), 50%, 0.46), 
+                0 0.25em 0.75em hsla(var(--hue), calc(var(--sat) - 10%), 40%, 0.3);
+
+            position: relative;
+            transition: all 0.2s ease;
+            outline: none;
+        }
+
+        .btn--pink::before,
+        .btn--pink::after {
+            content: "";
+            inset: 0;
+            position: absolute;
+            border-radius: 5em;
+            pointer-events: none;
+        }
+
+        /* overlay */
+        .btn--pink::before {
+            background-image: 
+                radial-gradient(ellipse, 
+                    hsla(var(--hue), 100%, 90%, .8) 20%,
+                    transparent 50%,
+                    transparent 200%
+                );
+            box-shadow: 
+                inset 0 .25em .75em hsla(var(--hue), 50%, 30%, 0.3),
+                inset 0 -.05em .2em rgba(255, 255, 255, 0.5),
+                inset 0 -1px 3px hsla(var(--hue), 80%, 50%, .75);
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: 200% 80%;
+            background-position: center 220%;
+            mix-blend-mode: overlay;
+        }
+
+        /* reflection */
+        .btn--pink::after {
+            background: linear-gradient(
+                180deg, 
+                hsla(var(--hue2),100%,96%,.95), 
+                hsla(var(--hue2),90%,85%,.7) 40%, 
+                transparent 80%
+            );
+            top: 0.075em;
+            left: 0.75em;
+            right: 0.75em;
+            bottom: 1.4em;
+            mix-blend-mode: screen;
+        }
+
+        .btn--pink:hover,
+        .btn--pink:active,
+        .btn--pink:focus {
+            outline: none;
+            background-position: center calc(var(--gradoffset) - 0.75em);
+        }
+
+        .btn--pink:active {
+            scale: 0.97;
+            translate: 0 1.5%;
+            transition: all 0.15s ease;
+        }
+
+        .dating__image {
+            width: 500px;
+            margin-left: 100px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .section--dating {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                margin-top: 40px;
+            }
+
+            .dating__text {
+                text-align: center;
+                align-items: center;
+                margin-bottom: 0px;
+            }
+
+            .btn--pink {
+                padding: 8px 20px;
+                font-size: 16px;
+            }
+
+            .dating__image {
+                width: 90%;
+                margin: 0;
+            }
+        }
+    </style>
+
+    <meta property="og:title" content="ZoneDating®" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.zonecommunity.net/dating" />
+    <meta property="og:image" content="https://www.zonecommunity.net/assets/ZonePink.png" />
+    <meta property="og:description" content="Life is long. Have a relationship with someone who lives three time zones away. ®" />
+    <meta name="theme-color" content="#FFCFEE">
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <button class="nav-button nav-button--logo" onclick="location.href='/';"></button>
+            <button class="nav-button" onclick="location.href='/zoneos';">ZoneOS</button>
+            <button class="nav-button nav-button--search"></button>
+        </header>
+
+        <section class="section section--dating">
+            <div class="dating__text">
+                <p class="section__title">ZoneDating®</p> 
+                <p>Life is long. Have a relationship with someone who lives three time zones away. ®</p>
+                <a href="/dating/signup"><button class="btn--pink">Get heartbroken today!</button></a>
+                <div style="height: 40px;"></div>
+            </div>
+            <img src="../assets/queen.png" class="dating__image" alt="ZoneDating">
+        </section>
+
+        <footer id="footer">
+            <p class="footer__left">© 2025 ZoneCommunity</p>
+            <div>
+                <a href="https://discord.com/invite/WTVGAMPnzN"><button class="footer__link">Discord</button></a>
+                <span class="footer__divider"></span>
+                <a href="https://www.youtube.com/@CreeperDaGuy"><button class="footer__link">YouTube</button></a>
+            </div>
+            <p class="footer__right"><button class="footer__link" onclick="location.href='/about';">About</button></p>
+        </footer>
+    </div>
+</body>
+</html>
