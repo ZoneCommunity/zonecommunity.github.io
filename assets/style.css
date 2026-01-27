@@ -152,7 +152,7 @@ body {
 
 .section--hero-preview {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(241, 241, 241, 0) 100%),
-            url('/assets/Hero.jpg');
+            url('/assets/Hero.png');
     background-size: 140%;
     background-position: center 35%;
     background-repeat: no-repeat;
